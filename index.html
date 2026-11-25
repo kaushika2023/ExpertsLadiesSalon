@@ -491,6 +491,80 @@ footer .small a{text-decoration:underline;text-underline-offset:3px}
   .two{grid-template-columns:1fr}
   footer{padding-bottom:150px}
 }
+
+/* mobile polish */
+@media (max-width:620px){
+  .hero{padding-bottom:0}
+  .stage{height:540px}
+  .statement{padding:48px 0 60px}
+  .statement p{font-size:1.8rem;line-height:1.16}
+  .sec{padding:64px 0}
+  .head{margin-bottom:28px}
+  .head-row{margin-bottom:24px;gap:18px}
+  .h2{font-size:2.5rem}
+  .sub{font-size:1.04rem;margin-top:12px}
+  .cards{padding-bottom:26px}
+  .swipe-hint{font-size:.8rem}
+  .work-cta{padding:20px;border-radius:22px}
+  .work-cta p{font-size:1.15rem}
+  .work-cta .btn{width:100%}
+  .mehendi{padding:64px 0}
+  .mehendi .wrap{gap:36px}
+  .founder{padding:64px 0}
+  .founder .wrap{gap:40px}
+  .promises{margin:26px 0 24px}
+  .widgets{grid-auto-rows:minmax(150px,auto)}
+  .wg{padding:18px;border-radius:24px;gap:10px}
+  .wg-photo{min-height:300px;padding:0}
+  .wg-photo img{width:42%;right:3%}
+  .wg-photo .ov{width:56%;padding:18px}
+  .wg-photo .ov h3{font-size:1.5rem}
+  .wg-photo .ov p{font-size:.84rem}
+  .wg-rate .num{font-size:3rem}
+  .wg-dark h3,.wg-gold h3{font-size:1.2rem;line-height:1.15}
+  .wg .big-emo{width:44px;height:44px}
+  .wg-ring .ring{width:76px;height:76px}
+  .wg-map{min-height:190px}
+  .wg-map .pin{top:30%}
+  .wg-map .pulse{top:30%}
+  .wg-book h3{font-size:1.5rem}
+  .inside{grid-auto-rows:140px}
+  .feel{gap:10px}
+  .feel div{padding:16px 18px}
+  .lists{gap:18px}
+  .visit{gap:14px}
+  .faq details{padding:0 18px}
+  footer{padding:80px 0 130px}
+  footer .cta{margin:26px 0 40px}
+}
+@media (max-width:380px){
+  .hero h1{font-size:3rem}
+  .h2{font-size:2.2rem}
+  .statement p{font-size:1.6rem}
+  .iphone{width:240px;height:496px}
+  .stage{height:500px}
+  .notif{width:230px}
+  .seg button{padding:9px 14px;font-size:.86rem}
+  .days span{width:56px;height:68px}
+}
+@media (max-width:350px){.island .name{display:none}}
+
+/* step inside widget: full-bleed photo */
+.wg-photo{background:#E9D6CC}
+.wg-photo img{position:absolute;inset:0;right:auto;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center 60%;border-radius:0;box-shadow:none;transition:transform 1.4s var(--ease)}
+.wg-photo:hover img{transform:scale(1.05)}
+.wg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,33,31,0) 45%,rgba(46,33,31,.45) 100%);pointer-events:none}
+.wg-photo .ov{position:absolute;z-index:1;left:16px;right:auto;top:auto;bottom:16px;width:auto;max-width:min(330px,calc(100% - 32px));padding:18px 20px;border-radius:22px;background:rgba(255,248,245,.8);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);box-shadow:0 20px 40px -20px rgba(46,33,31,.5);display:block}
+.wg-photo .ov h3{font-size:1.6rem;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wg-photo .ov h3::after{content:"";width:30px;height:30px;border-radius:50%;flex:none;background:#2E211F url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M7 17L17 7M9 7h8v8'/%3E%3C/svg%3E") center/14px no-repeat}
+.wg-photo .ov p{font-size:.9rem;margin-top:6px;color:#5b4c47}
+@media (max-width:620px){
+  .wg-photo{min-height:280px}
+  .wg-photo img{width:100%;right:auto}
+  .wg-photo .ov{left:12px;bottom:12px;width:auto;max-width:calc(100% - 24px);padding:14px 16px}
+  .wg-photo .ov h3{font-size:1.3rem}
+  .wg-photo .ov p{font-size:.84rem}
+}
 </style>
 </head>
 <body>
